@@ -23,7 +23,8 @@ export interface IOccasion {
 export type UpdateStateCallback = (newState: Array<ICell | IOccasion>) => void;
 
 export interface ICreatorService {
-  createAddCell(): Promise<void>;
+  creations: Array<ICell | IOccasion>;
+  createAddRandomElement(): Promise<void>;
   subscribeOnUpdates(updateStateCallback: UpdateStateCallback): void;
   unsubscribeFromUpdates(updateStateCallback: UpdateStateCallback): void;
 }

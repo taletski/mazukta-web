@@ -40,6 +40,7 @@ export class CreatorService implements ICreatorService {
 
   private addToQueue(element: ICell | IOccasion) {
     this.queueOfLife.enqueue(element);
+    this.notifySubscribersOnQueueUpdate();
   }
 
   private notifySubscribersOnQueueUpdate() {
@@ -142,7 +143,11 @@ export class CreatorService implements ICreatorService {
     return CreatorService.instance;
   }
 
-  public async createAddCell() {
+  public get creations() {
+    return this.queueOfLife.getData();
+  }
+
+  public async createAddRandomElement() {
     this.handleCreateAddRandomCell();
   }
 
