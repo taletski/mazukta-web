@@ -1,7 +1,7 @@
 import {
   ICellsCreationService,
   UpdateStateCallback,
-} from "./CellsCreationService.types";
+} from "./CellsCreationService.type";
 
 export class CellsCreationService implements ICellsCreationService {
   private static instance: CellsCreationService | null = null;
