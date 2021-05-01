@@ -22,7 +22,9 @@ export class CreatorService implements ICreatorService {
     this.CELLS_QUEUE_CAPACITY
   );
 
-  private constructor() {}
+  private constructor() {
+    this.createAddRandomElement = this.createAddRandomElement.bind(this);
+  }
 
   private handleCreateAddRandomCell() {
     this.addToQueue(this.generateRandomCell());

@@ -1,6 +1,6 @@
 import React from "react";
 import { CreatorService } from "./CreatorService";
-import { ICell, IOccasion } from "./CreatorService.type";
+import { CreatorState } from "./CreatorService.type";
 
 test("New instance should return empty list of creations", () => {
   const creator = CreatorService.getInstance();
@@ -16,9 +16,9 @@ test("After creation method called creations should not be empty", async () => {
 });
 
 test("Should update subscribers after creation method was called", async () => {
-  let state: Array<ICell | IOccasion> = [];
+  let state: CreatorState = [];
 
-  const setState = (newState: Array<ICell | IOccasion>) => {
+  const setState = (newState: CreatorState) => {
     state = [...newState];
   };
 
@@ -33,9 +33,9 @@ test("Should update subscribers after creation method was called", async () => {
 });
 
 test("Should unsubscribe from updates correctly", async () => {
-  let state: Array<ICell | IOccasion> = [];
+  let state: CreatorState = [];
 
-  const setState = (newState: Array<ICell | IOccasion>) => {
+  const setState = (newState: CreatorState) => {
     state = [...newState];
   };
 
@@ -53,9 +53,9 @@ test("Should unsubscribe from updates correctly", async () => {
 });
 
 test("Should create occasion only if three elements in a row are of the same type and category", async () => {
-  let state: Array<ICell | IOccasion> = [];
+  let state: CreatorState = [];
 
-  const setState = (newState: Array<ICell | IOccasion>) => {
+  const setState = (newState: CreatorState) => {
     state = [...newState];
   };
 

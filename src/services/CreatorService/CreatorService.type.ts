@@ -20,10 +20,12 @@ export interface IOccasion {
   readonly category: TOccasionCategory;
 }
 
-export type UpdateStateCallback = (newState: Array<ICell | IOccasion>) => void;
+export type CreatorState = Array<ICell | IOccasion>;
+
+export type UpdateStateCallback = (newState: CreatorState) => void;
 
 export interface ICreatorService {
-  creations: Array<ICell | IOccasion>;
+  creations: CreatorState;
   createAddRandomElement(): Promise<void>;
   subscribeOnUpdates(updateStateCallback: UpdateStateCallback): void;
   unsubscribeFromUpdates(updateStateCallback: UpdateStateCallback): void;
