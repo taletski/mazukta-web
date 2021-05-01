@@ -1,8 +1,8 @@
 import React from "react";
-import { CellsCreationService } from "./CellsCreationService";
+import { CreatorService } from "./CreatorService";
 
 // test("createAddCell() should create and add a new random cell with unique id", () => {
-//   const cellsCreationService = CellsCreationService.getInstance();
+//   const cellsCreationService = CreatorService.getInstance();
 // });
 
 // test("createAddCell() should create and add a random cell", () => {});
