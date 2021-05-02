@@ -52,7 +52,7 @@ export const CreatorServiceProvider: React.FC = ({ children }) => {
   );
 };
 
-const useCreatorService = (): ICreatorServiceContext => {
+export const useCreatorService = (): ICreatorServiceContext => {
   const contextFieldsAndMethods = useContext(CreatorServiceContext);
   return contextFieldsAndMethods;
 };
