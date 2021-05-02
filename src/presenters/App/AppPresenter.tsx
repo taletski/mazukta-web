@@ -1,9 +1,18 @@
 import React from "react";
 import isEqual from "lodash.isequal";
 import { IAppPresenterProps } from "../../containers/App/AppContainer.type";
+import { S } from "./AppPresenter.style";
 
 const AppPresenterComponent: React.FC<IAppPresenterProps> = () => {
-  return null;
+  return (
+    <S.Container>
+      <S.Content>
+        <S.HeaderContainer></S.HeaderContainer>
+        <S.CardsContainer></S.CardsContainer>
+        <S.ButtonContainer></S.ButtonContainer>
+      </S.Content>
+    </S.Container>
+  );
 };
 
 export const AppPresenter = React.memo(AppPresenterComponent, isEqual);

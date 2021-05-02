@@ -1,4 +1,4 @@
-import { ITheme } from "styled-components";
+import { DefaultTheme } from "styled-components";
 
 const defaultThemeColors = {
   white: "#fff",
@@ -18,7 +18,7 @@ const defaultThemeColors = {
   sanJuan: "#2C5364",
 };
 
-export const defaultTheme: ITheme = {
+export const defaultTheme: DefaultTheme = {
   background: {
     colors: {
       gradientFrom: defaultThemeColors.black,
