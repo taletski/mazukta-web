@@ -3,6 +3,7 @@ import isEqual from "lodash.isequal";
 import { IAppPresenterProps } from "../../containers/App/AppContainer.type";
 import { S } from "./AppPresenter.style";
 import { AppHeaderPresenter } from "../AppHeader/AppHeaderPresenter";
+import { Button } from "../Button/Button";
 
 const AppPresenterComponent: React.FC<IAppPresenterProps> = () => {
   return (
@@ -12,7 +13,9 @@ const AppPresenterComponent: React.FC<IAppPresenterProps> = () => {
           <AppHeaderPresenter label="Cells Playground" />
         </S.HeaderContainer>
         <S.CardsContainer></S.CardsContainer>
-        <S.ButtonContainer></S.ButtonContainer>
+        <S.ButtonContainer>
+          <Button label="Create" />
+        </S.ButtonContainer>
       </S.Content>
     </S.Container>
   );

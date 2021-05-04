@@ -5,7 +5,7 @@ const defaultThemeColors = {
   black: "#000",
   ripePlum: "#310050",
   bossanova: "#5A3472",
-  eminence: "#5C3674",
+  eminence: "#613B79",
   darkerBossanovaShade: "#542865",
   atoll: "#0D658A",
   mintGreen: "#B0FFB4",
@@ -34,7 +34,7 @@ export const defaultTheme: DefaultTheme = {
 
   button: {
     colors: {
-      background: defaultThemeColors.white,
+      background: defaultThemeColors.bossanova,
       backgroundHover: defaultThemeColors.eminence,
       backgroundFocus: defaultThemeColors.eminence,
       backgroundActive: defaultThemeColors.darkerBossanovaShade,
