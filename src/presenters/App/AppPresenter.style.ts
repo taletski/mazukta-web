@@ -30,7 +30,8 @@ export const S = {
     margin-bottom: 22px;
   `,
   CardsContainer: styled.div`
-    flex: 1 1 auto;
+    flex: 1 1;
+    min-height: 0;
   `,
   ButtonContainer: styled.div`
     flex: 0 0 35px;

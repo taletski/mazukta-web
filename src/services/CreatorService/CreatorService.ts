@@ -4,7 +4,6 @@ import {
   ICell,
   ICreatorService,
   IOccasion,
-  TCell,
   TCellCategory,
   TOccasionCategory,
   UpdateStateCallback,
@@ -47,7 +46,7 @@ export class CreatorService implements ICreatorService {
 
   private notifySubscribersOnQueueUpdate() {
     this.subscribersOnQueueUpdate.forEach((updateState) =>
-      updateState(this.queueOfLife.getData())
+      updateState([...this.queueOfLife.getData()])
     );
   }
 

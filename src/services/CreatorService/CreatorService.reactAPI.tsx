@@ -26,7 +26,7 @@ export const CreatorServiceProvider: React.FC = ({ children }) => {
 
   useEffect(() => {
     const updateStateCallback = (newState: CreatorState) => {
-      setCurrentCreatorState(newState);
+      setCurrentCreatorState([...newState]);
     };
 
     CreatorService.getInstance().subscribeOnUpdates(updateStateCallback);
