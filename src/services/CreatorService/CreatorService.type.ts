@@ -20,7 +20,11 @@ export interface IOccasion {
   readonly category: TOccasionCategory;
 }
 
-export type CreatorState = Array<ICell | IOccasion>;
+export type Card = ICell | IOccasion;
+
+export type CardCategory = Card["category"];
+
+export type CreatorState = Array<Card>;
 
 export type UpdateStateCallback = (newState: CreatorState) => void;
 

@@ -4,11 +4,14 @@ import "./index.css";
 import App from "./App";
 import { ThemeProvider } from "styled-components";
 import { defaultTheme } from "./theme";
+import { CreatorServiceProvider } from "services/CreatorService/CreatorService.reactAPI";
 
 ReactDOM.render(
   <React.StrictMode>
     <ThemeProvider theme={defaultTheme}>
-      <App />
+      <CreatorServiceProvider>
+        <App />
+      </CreatorServiceProvider>
     </ThemeProvider>
   </React.StrictMode>,
   document.getElementById("root")

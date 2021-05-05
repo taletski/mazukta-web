@@ -4,17 +4,22 @@ import { IAppPresenterProps } from "../../containers/App/AppContainer.type";
 import { S } from "./AppPresenter.style";
 import { AppHeaderPresenter } from "../AppHeader/AppHeaderPresenter";
 import { Button } from "../Button/Button";
+import { CardsListContainer } from "../../containers/CardsList/CardsListContainer";
 
-const AppPresenterComponent: React.FC<IAppPresenterProps> = () => {
+const AppPresenterComponent: React.FC<IAppPresenterProps> = ({
+  handleCreateAddElement,
+}) => {
   return (
     <S.Container>
       <S.Content>
         <S.HeaderContainer>
           <AppHeaderPresenter label="Cells Playground" />
         </S.HeaderContainer>
-        <S.CardsContainer></S.CardsContainer>
+        <S.CardsContainer>
+          <CardsListContainer />
+        </S.CardsContainer>
         <S.ButtonContainer>
-          <Button label="Create" />
+          <Button label="Create" onClick={handleCreateAddElement} />
         </S.ButtonContainer>
       </S.Content>
     </S.Container>

@@ -53,25 +53,25 @@ export const defaultTheme: DefaultTheme = {
   },
 
   avatars: {
-    aliveCell: {
+    "alive-cell": {
       colors: {
         gradientFrom: defaultThemeColors.selectiveYellow,
         gradientTo: defaultThemeColors.buttermilk,
       },
     },
-    deadCell: {
+    "dead-cell": {
       colors: {
         gradientFrom: defaultThemeColors.atoll,
         gradientTo: defaultThemeColors.mintGreen,
       },
     },
-    lifeOccured: {
+    "life-occured": {
       colors: {
         gradientFrom: defaultThemeColors.electricViolet,
         gradientTo: defaultThemeColors.cottonCandy,
       },
     },
-    deathOccured: {
+    "death-occured": {
       colors: {
         gradientFrom: defaultThemeColors.gableGreen,
         gradientIntermediate: defaultThemeColors.tePapaGreen,

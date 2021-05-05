@@ -1,5 +1,5 @@
 import "styled-components";
-
+import { CardCategory } from "./services/CreatorService/CreatorService.type";
 declare module "styled-components" {
   export interface DefaultTheme {
     background: {
@@ -36,25 +36,7 @@ declare module "styled-components" {
     };
 
     avatars: {
-      aliveCell: {
-        colors: {
-          gradientFrom: string;
-          gradientTo: string;
-        };
-      };
-      deadCell: {
-        colors: {
-          gradientFrom: string;
-          gradientTo: string;
-        };
-      };
-      lifeOccured: {
-        colors: {
-          gradientFrom: string;
-          gradientTo: string;
-        };
-      };
-      deathOccured: {
+      [key in CardCategory]: {
         colors: {
           gradientFrom: string;
           gradientIntermediate?: string;
