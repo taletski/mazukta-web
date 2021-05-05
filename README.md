@@ -1,6 +1,10 @@
-# Getting Started with Create React App
+# Play Around
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+To play around, find the deployed project [here](https://stoic-golick-29ed24.netlify.app/).
+
+# Rules
+
+Alive and dead cells are added randomly with equal probabilities. Life occures when you create three live cells in a row. Life dies if you create three dead cells in a row. Death occures only if any life already exists.
 
 ## Available Scripts
 
