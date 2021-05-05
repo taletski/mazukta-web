@@ -13,15 +13,12 @@ export const S = {
     background-color: ${({ theme }) => theme.card.colors.background};
   `,
   AvatarContainer: styled.div`
-    flex: 0 0 72px;
+    flex: 0 0 auto;
+    margin-right: 16px;
     margin-left: 16px;
   `,
   TextContainer: styled.div`
     flex: 1 1 256px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
     height: 100%;
     box-sizing: border-box;
   `,
@@ -30,8 +27,8 @@ export const S = {
     font-size: 20px;
     line-height: 28px;
     letter-spacing: 0.0015em;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 16px;
+    margin-bottom: 0;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -43,7 +40,7 @@ export const S = {
     letter-spacing: 0.0025em;
     margin-top: 0;
     margin-right: 15px;
-    margin-bottom: 10px;
+    margin-bottom: 9px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;

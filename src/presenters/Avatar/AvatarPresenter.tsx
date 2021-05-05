@@ -7,7 +7,11 @@ const AvatarPresenterComponent: React.FC<IAvatarPresenterProps> = ({
   category,
   content,
 }) => {
-  return <S.Avatar category={category}>{content ? content : ""}</S.Avatar>;
+  return (
+    <S.Avatar category={category}>
+      <S.AvatarContent>{content ? content : ""}</S.AvatarContent>
+    </S.Avatar>
+  );
 };
 
 export const AvatarPresenter = React.memo(AvatarPresenterComponent, isEqual);
