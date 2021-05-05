@@ -13,7 +13,7 @@ export class CreatorService implements ICreatorService {
   private static instance: CreatorService | null = null;
   private NUM_OF_LAST_ELEMENTS_NEEDED_FOR_OCCASION: number = 3;
   private CELLS_QUEUE_CAPACITY: number =
-    this.NUM_OF_LAST_ELEMENTS_NEEDED_FOR_OCCASION + 2; // for user to see the latest occasion, cards of the same type before the occasion and one card before them all
+    this.NUM_OF_LAST_ELEMENTS_NEEDED_FOR_OCCASION + 10; // to populate the whole screen vertically
   private lastDateUsedToGenerateUniqueId: number | null = null;
   private lifeCount: number = 0;
   private subscribersOnQueueUpdate: Set<UpdateStateCallback> = new Set<UpdateStateCallback>();

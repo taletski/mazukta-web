@@ -5,5 +5,9 @@ import { useCreatorService } from "../../services/CreatorService/CreatorService.
 export const CardsListContainer: React.FC = () => {
   const { currentCreatorState } = useCreatorService();
 
-  return <CardsListPresenter currentElements={currentCreatorState} />;
+  return (
+    currentCreatorState && (
+      <CardsListPresenter currentElements={currentCreatorState} />
+    )
+  );
 };

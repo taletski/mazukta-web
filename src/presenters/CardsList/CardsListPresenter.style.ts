@@ -7,11 +7,12 @@ export const S = {
     align-items: stretch;
     height: 100%;
     width: 100%;
-    overflow-y: scroll;
+    overflow-y: hidden;
+    overflow-x: hidden;
 
     & > div {
-      margin-top: 10px;
-      margin-bottom: 10px;
+      margin-top: 2px;
+      margin-bottom: 2px;
     }
   `,
 };
